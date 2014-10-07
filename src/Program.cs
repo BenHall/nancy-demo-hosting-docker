@@ -13,7 +13,7 @@
             var nancyHost = new NancyHost(new Uri("http://0.0.0.0:" + port));
             nancyHost.Start();
 
-            Console.WriteLine("Nancy now listening on http://0.0.0.0" + port +".");
+            Console.WriteLine("Nancy now listening on http://0.0.0.0:" + port);
 
             var line = Console.ReadLine();
             while(line != "quit") {
