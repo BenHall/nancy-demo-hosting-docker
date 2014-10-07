@@ -1,4 +1,4 @@
-namespace Nancy.Demo.Hosting.Self
+namespace Nancy.Demo.Hosting.Docker
 {
     public class TestModule : NancyModule
     {
