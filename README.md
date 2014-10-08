@@ -5,7 +5,7 @@ Run
 -------------
 
 ```
-	$ docker run --name nancy-demo -p 8080 github.com/benhall/nancy-demo-hosting-docker
+	$ docker run -d --name nancy-demo -p 8080 github.com/benhall/nancy-demo-hosting-docker
   $ docker port nancy-demo 8080 | xargs curl
 ```
   
