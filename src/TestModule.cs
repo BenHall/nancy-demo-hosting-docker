@@ -9,10 +9,10 @@ namespace Nancy.Demo.Hosting.Docker
                 return View["staticview", Request.Url];
             };
 
-            Get["/testing"] = parameters =>
+            Get["/machine"] = parameters =>
             {
-                System.Console.WriteLine("Visit /testing on " + System.Environment.MachineName);
-                return View["staticview", Request.Url];
+                System.Console.WriteLine("Visit /machine on " + System.Environment.MachineName);
+                return System.Environment.MachineName;
             };
         }
     }
