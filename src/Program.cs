@@ -9,7 +9,7 @@
     {
         static void Main()
         {
-            var port = 8081;
+            var port = 8080;
             var nancyHost = new NancyHost(new Uri("http://0.0.0.0:" + port));
             nancyHost.Start();
 
