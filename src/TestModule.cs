@@ -12,7 +12,7 @@ namespace Nancy.Demo.Hosting.Docker
             Get["/machine"] = parameters =>
             {
                 System.Console.WriteLine("Visit /machine on " + System.Environment.MachineName);
-                return System.Environment.MachineName;
+                return System.Environment.MachineName + "\r\n";
             };
         }
     }
