@@ -13,7 +13,7 @@ Run
 Boot2Docker
 -----------
 
-Due to Boot2Docker being inside a VM there is a conflict between the Nancy self hosting code, the IP being bound to and the hostname. The result of this conflict is the response _&lt;h1&gl;Bad Request (Invalid host)&lt;/h1&gl;_
+Due to Boot2Docker being inside a VM there is a conflict between the Nancy self hosting code, the IP being bound to and the hostname. The result of this conflict is the response _&lt;h1&gt;Bad Request (Invalid host)&lt;/h1&gt;_
 
 The correct curl is below as it sets the Host so Nancy/Mono knows how to serve the request:
 
