@@ -1,4 +1,4 @@
-FROM        benhall/docker-mono
+FROM        mono
 COPY        . /src
 WORKDIR     /src
 RUN         xbuild Nancy.Demo.Hosting.Docker.sln
