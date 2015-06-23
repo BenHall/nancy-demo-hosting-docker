@@ -10,13 +10,9 @@ Run
   $ docker port nancy-demo 8080 | xargs curl 
 ```
 
-Boot2Docker
------------
-
-Due to Boot2Docker being inside a VM there is a conflict between the Nancy self hosting code, the IP being bound to and the hostname. The result of this conflict is the response _&lt;h1&gt;Bad Request (Invalid host)&lt;/h1&gt;_
-
-The correct curl is below as it sets the Host so Nancy/Mono knows how to serve the request:
+If you're using via boot2docker then specify the VM IP as part of the curl command
 
 ```
-$ curl  -H "Host: 0.0.0.0:8080" $(boot2docker ip):8080
+  $ curl $(boot2docker ip):8080
 ```
+
